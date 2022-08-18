@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="" target="_blank" autocomplete="off">
+        <fieldset>
+            <legend>FORM</legend>
+            <label for="first">Enter Your Name:</label>
+            <input id="first" type="text"><br><br>
+            <label for="email">Enter Your mailid:</label>
+            <input id="email" type="email"><br><br>
+            <label for="num">Enter Your phone number:</label>
+            <input id="num" type="number"><br><br>
+            <label for="reg">Enter your register number:</label>
+            <input type="tel" pattern="[0-9]" maxlength="10" autofocus><br><br>
+            <label for="dob">Enter Your date of birth:</label>
+            <input id="dob" type="date" min="1990-12-31" max="2000-01-01"><br><br>
+            <label for="date">Enter Your birth date and time:</label>
+            <input id="date" type="datetime-local"><br><br>
+            <label for="time">Enter Your birth time:</label>
+            <input id="time" type="time"><br><br>
+            <label for="month">enter your birth month:</label>
+            <input id="month" type="month"><br><br>
+            <label for="week">enter your birth week:</label>
+            <input id="week" type="week"><br><br>
+            <label for="color">enter your favourite color:</label>
+            <input type="color" name="" id="color"><br><br>
+            <label for="">which is your favourite subject:</label>
+            <input type="checkbox" id="maths">
+            <label for="maths">maths</label>
+            <input type="checkbox" id="computer">
+            <label for="computer">computer</label>
+            <input type="checkbox" id="science">
+            <label for="science">science</label><br><br>
+            <label for="">Are you married?</label>
+            <input type="radio" id="yes" name="marry">
+            <label for="yes">yes</label>
+            <input type="radio" id="no" name="marry">
+            <label for="no">No</label><br><br>
+            <label for="search">Enter search:</label>
+            <input type="search" id="search"><br><br>
+            <label for="pass">Enter your password:</label>
+            <input type="password" required><br><br>
+            <label for="gender">Enter your gender:</label>
+            <select name="gender" id="gender">
+                <option value="" selected>none</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="range">volume range:</label>
+            <input type="range" id="range" min="50" max="100"><br><br>
+            <label for="file">Upload your photo:</label>
+            <input type="file" id="file" multiple><br><br>
+            <label for="cars">which is your favourite car:</label>
+            <select name="cars" id="cars" size="5" multiple>
+                <datalist id="car">
+                    <optgroup label="cars">
+                        <option value="audi">AUDI</option>
+                        <option value="bmw">BMW</option>
+                        <option value="benze">BENZE</option>
+                        <option value="honda">HONDA</option>
+                    </optgroup>
+                    <optgroup label="bikes">
+                        <option value="discover" disabled>DISCOVER</option>
+                        <option value="pulser">PULSER</option>
+                        <option value="hero">HERO</option>
+                </datalist>
+            </select><br><br>
+            <button onclick="alert('hello world!')" style="width: 50px; height: 20px;">click</button><br><br>
+            <label for="address">address:</label>
+            <textarea name="address" id="address" cols="30" rows="5"
+                placeholder="Enter your address"></textarea><br><br>
+            <label for="fedd">Feedback:</label>
+            <textarea name="feed" id="feed" style="width:100px;height: 100px;"
+                readonly>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, culpa?</textarea><br><br>
+            <input type="image" src="/img_submit.gif" alt="submit" height="40" width="40"><br><br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
